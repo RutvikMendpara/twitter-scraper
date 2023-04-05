@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter username to ID converter</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+  </head>
+  <body class="bg-gray-100 ">
+    <nav class="bg-gray-100 border-b border-gray-200">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+             <a class="text-gray-800 font-bold hover:text-blue-500 mr-4" href="/">Home</a>
+          <div class="flex items-center"> 
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1 class="block text-black-600 font-bold mb-4 text-center text-2xl">Twitter username to ID converter </h1>
+    {% block content %}{% endblock %}
+    <!-- Include custom JavaScript -->
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
